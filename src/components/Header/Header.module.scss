@@ -1,0 +1,59 @@
+@import "../../assets/style/variables";
+
+.Header {
+    background: linear-gradient(202deg, rgba(39, 53, 40, 1) 0%, rgba(62, 89, 63, 1) 60%, rgba(94,117,95,1) 100%);
+
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+        padding: 16px 0;
+    }
+
+    @media screen and (min-width: $tablet) {
+        padding: 5px 0;
+    }
+}
+
+.HeaderBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HeaderNav {
+    display: flex;
+    align-items: center;
+}
+
+.HeaderList {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
+}
+
+.HeaderListItem {
+    margin-left: 36px;
+}
+
+.HeaderLink {
+    display: block;
+    padding-top: 5px 0;
+    font-weight: $bold;
+    font-size: 22px;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        color: $orange-color;
+        text-shadow: 0 0 5px #eeff00;
+    }
+}
+
+.HeaderLogo {
+    display: flex;
+    align-items: center;
+    font-size: 72px;
+    font-family: "Roboto Slab", serif;
+    color: #273529;
+    text-shadow: 0 0 8px #b3c700;
+}

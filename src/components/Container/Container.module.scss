@@ -1,0 +1,21 @@
+@import "../../assets/style/variables";
+
+
+.Container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    padding: 0 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    padding: 0 80px;
+  }
+}
