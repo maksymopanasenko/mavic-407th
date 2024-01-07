@@ -1,0 +1,38 @@
+@import "../../../assets/style/variables";
+
+.TextSection {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: $tablet) {
+            width: 47%;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.TextSectionDescr {
+    font-size: 14px;
+    line-height: 1.5;
+
+    @media screen and (min-width: $tablet) {
+        width: 47%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 18px;
+    }
+}
+
+.Reversed {
+    flex-direction: row-reverse;
+}

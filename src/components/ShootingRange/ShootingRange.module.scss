@@ -1,7 +1,7 @@
 @import "../../assets/style/variables";
 
 .ShootingRange {
-    background-color: #5c5353;
+    background: linear-gradient(212deg, rgba(92,83,83,1) 0%, rgba(117,138,56,1) 100%);
     padding: 40px 0 150px;
     position: relative;
     overflow: hidden;
@@ -15,7 +15,7 @@
 
 .ShootingRangeTitle {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #fff;
     font-size: 26px;
     

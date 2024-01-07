@@ -1,0 +1,15 @@
+@import "../../assets/style/variables";
+
+.AboutBatalion {
+    padding: 50px 0;
+}
+
+.AboutBatalionTitle {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 40px;
+    }
+}

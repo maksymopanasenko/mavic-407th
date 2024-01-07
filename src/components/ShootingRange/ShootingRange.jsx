@@ -21,7 +21,7 @@ const ShootingRange = () => {
     const handleActive = () => setIsActive(ia => !ia);
 
     return (
-        <div className={styles.ShootingRange}>
+        <section id='shooting-range' className={styles.ShootingRange}>
             <Container>
                 <div className={styles.ShootingRangeBody}>
                     <h2 className={styles.ShootingRangeTitle}>Send them to hell!</h2>
@@ -35,7 +35,7 @@ const ShootingRange = () => {
                     <Popup isActive={isActive} onSetActive={handleActive}/>
                 </div>
             </Container>
-        </div>
+        </section>
     );
 }
 

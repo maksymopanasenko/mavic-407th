@@ -1,3 +1,4 @@
+import AboutBatalion from './components/AboutBatalion/AboutBatalion';
 import Header from './components/Header/Header';
 import ShootingRange from './components/ShootingRange/ShootingRange';
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <main>
+        <AboutBatalion />
         <ShootingRange />
       </main>
     </>

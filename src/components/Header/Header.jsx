@@ -54,9 +54,9 @@ const Header = () => {
                             <li className={styles.HeaderListItem}>
                                 <Link
                                     className={styles.HeaderLink}
-                                    to="#"
+                                    to="shooting-range"
                                     duration={500}
-                                    aria-label="#"
+                                    aria-label="Move to section"
                                 >
                                     Shooting range
                                 </Link>
