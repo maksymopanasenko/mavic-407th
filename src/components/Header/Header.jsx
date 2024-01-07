@@ -28,17 +28,17 @@ const Header = () => {
                                     duration={500}
                                     aria-label="Move to section"
                                 >
-                                    Text1
+                                    Fundrising
                                 </Link>
                             </li>
                             <li className={styles.HeaderListItem}>
                                 <Link
                                     className={styles.HeaderLink}
-                                    to="#"
+                                    to="product"
                                     duration={500}
-                                    aria-label="#"
+                                    aria-label="Move to section"
                                 >
-                                    Text2
+                                    Mavic 3T
                                 </Link>
                             </li>
                             <li className={styles.HeaderListItem}>

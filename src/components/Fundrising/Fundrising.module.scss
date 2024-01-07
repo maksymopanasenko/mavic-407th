@@ -1,7 +1,7 @@
 @import "../../assets/style/variables";
 
 .Fundrising {
-    padding: 60px 0;
+    padding: 100px 0;
 }
 
 .FundrisingTitle {
@@ -30,8 +30,12 @@
 }
 
 .FundrisingInfo {
-    max-width: 70%;
-    margin: 0 auto;
+    width: 100%;
+    
+    @media screen and (min-width: $tablet) {
+        max-width: 70%;
+        margin: 0 auto;
+    }
 }
 
 .FundrisingHolder {
@@ -39,8 +43,23 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    font-size: 24px;
+}
+
+.FundrisingLabel {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
     font-weight: $semibold;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        gap: 10px;
+        font-size: 24px;
+    }
+
+    &:last-child {
+        text-align: right;
+    }
 }
 
 .FundrisingBar {
@@ -59,4 +78,13 @@
 .FundrisingAmount {
     font-weight: $bold;
     font-size: 26px;
+}
+
+.FundrisingPercent {
+    font-weight: $bold;
+    font-size: 18px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 24px;
+    }
 }

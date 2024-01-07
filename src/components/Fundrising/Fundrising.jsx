@@ -11,15 +11,15 @@ const Fundrising = () => {
                     <div></div>
                     <div className={styles.FundrisingInfo}>
                         <div className={styles.FundrisingHolder}>
-                            <p>Already collected: <span className={styles.FundrisingAmount}>0</span> EUR</p>
-                            <span><span>100</span>%</span>
+                            <p className={styles.FundrisingLabel}>Already collected: <span className={styles.FundrisingAmount}>{0} EUR</span></p>
+                            <span className={styles.FundrisingPercent}>100%</span>
                         </div>
                         <div className={styles.FundrisingBar}>
                             <div className={styles.FundrisingProgress}></div>
                         </div>
                         <div className={styles.FundrisingHolder}>
-                            <span><span>0</span>%</span>
-                            <p>Target amount: <span className={styles.FundrisingAmount}>2500</span> EUR</p>
+                            <span className={styles.FundrisingPercent}><span>{0}%</span></span>
+                            <p className={styles.FundrisingLabel}>Target amount: <span className={styles.FundrisingAmount}>2500 EUR</span></p>
                         </div>
                     </div>
                 </div>

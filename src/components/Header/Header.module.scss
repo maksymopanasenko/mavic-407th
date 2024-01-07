@@ -1,10 +1,10 @@
 @import "../../assets/style/variables";
 
 .Header {
-    background: linear-gradient(202deg, rgba(39, 53, 40, 1) 0%, rgba(62, 89, 63, 1) 60%, rgba(94,117,95,1) 100%);
-    box-shadow: 0 1px 20px #000;
+    background: linear-gradient(202deg, rgba(4, 36, 11, 1) 0%, rgba(22, 61, 31, 1) 60%, rgba(47, 75, 54, 1) 100%);
+    box-shadow: 0 1px 20px #000000;
     position: relative;
-    z-index: 20; 
+    z-index: 20;
 
     @media screen and (min-width: $mobile) and (max-width: $tablet) {
         padding: 16px 0;

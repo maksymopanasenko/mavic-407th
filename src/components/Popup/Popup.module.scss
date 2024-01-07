@@ -1,7 +1,9 @@
+@import "../../assets/style/variables";
+
 .Popup {
-    width: 340px;
+    width: 95%;
     margin: 30px auto 0;
-    padding: 10px 20px 30px;
+    padding: 10px 10px 30px;
     background: rgb(94, 117, 95);
     border-radius: 20px 20px 0 0;
     position: absolute;
@@ -10,6 +12,11 @@
     transform: translateX(-50%);
     transition: 1s ease;
     box-shadow: 0 0 10px #000;
+
+    @media screen and (min-width: $tablet) {
+        width: 340px;
+        padding: 10px 20px 30px;
+    }
 }
 
 .PopupActive {

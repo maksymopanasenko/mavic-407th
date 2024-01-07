@@ -1,0 +1,80 @@
+@import "../../assets/style/variables";
+
+.Product {
+    background: #04240b;
+    padding: 70px 0;
+}
+
+.ProductBody {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ProductArch {
+    padding: 100px 50px;
+    border-radius: 100% 100%;
+    border: 1px solid #fff;
+    max-width: 600px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet) {
+        padding: 150px 50px;
+    }
+}
+
+.ProductAdvantages {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    transform: translateY(90px);
+
+    @media screen and (min-width: $tablet) {
+        transform: translateY(120px);
+    }
+
+    &:last-of-type {
+        transform: translateY(-90px);
+
+        @media screen and (min-width: $tablet) {
+            transform: translateY(-120px);
+        }
+    }
+}
+
+.ProductAdvantage {
+    padding: 15px 10px;
+    font-weight: $bold;
+    background: #ffffff;
+    font-size: 12px;
+    width: 45%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #000;
+
+    @media screen and (min-width: $tablet) {
+        width: 340px;
+        padding: 30px 10px;
+        font-size: 18px;
+    }
+}
+
+.ProductItem {
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ProductTitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 26px;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+}
