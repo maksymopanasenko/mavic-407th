@@ -1,3 +1,5 @@
+@import "../../assets/style/variables";
+
 .Button {
     align-items: center;
     appearance: none;
@@ -26,7 +28,8 @@
     touch-action: manipulation;
     white-space: nowrap;
     will-change: box-shadow, transform;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: $bold;
 
     &:focus {
         box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
@@ -35,6 +38,7 @@
     &:hover {
         box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
         transform: translateY(-2px);
+        color: #1b611d;
     }
 
     &:active {

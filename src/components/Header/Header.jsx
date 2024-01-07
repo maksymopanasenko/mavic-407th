@@ -44,11 +44,11 @@ const Header = () => {
                             <li className={styles.HeaderListItem}>
                                 <Link
                                     className={styles.HeaderLink}
-                                    to="#"
+                                    to="about"
                                     duration={500}
-                                    aria-label="#"
+                                    aria-label="Move to section"
                                 >
-                                    Text3
+                                    About batalion
                                 </Link>
                             </li>
                             <li className={styles.HeaderListItem}>

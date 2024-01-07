@@ -24,7 +24,7 @@ const ShootingRange = () => {
         <section id='shooting-range' className={styles.ShootingRange}>
             <Container>
                 <div className={styles.ShootingRangeBody}>
-                    <h2 className={styles.ShootingRangeTitle}>Send them to hell!</h2>
+                    <h2 className={styles.ShootingRangeTitle}>Send them all to hell!</h2>
                     <ul className={styles.ShootingRangeVehicles}>
                         {
                             vehicles.map(vehicle => (

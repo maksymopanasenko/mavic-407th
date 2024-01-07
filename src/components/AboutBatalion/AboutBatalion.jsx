@@ -7,7 +7,7 @@ import Container from '../Container/Container';
 
 const AboutBatalion = () => {
     return (
-        <div className={styles.AboutBatalion}>
+        <section id='about' className={styles.AboutBatalion}>
             <Container>
                 <h2 className={styles.AboutBatalionTitle}>About heroes from 407th</h2>
                 <TextSection img={soldier}>
@@ -20,7 +20,7 @@ const AboutBatalion = () => {
                     The 45th Battalion, 3rd Company of the Armed Forces of Ukraine stands as a symbol of unwavering bravery and dedication in the face of adversity. In the ongoing conflict, this valiant unit has emerged as a formidable force, playing a pivotal role in the defense of the city of Avdiivka against Russian invaders.
                 </TextSection>
             </Container>
-        </div>
+        </section>
     );
 }
 
