@@ -2,11 +2,13 @@ import { useState } from "react";
 import FireAnimation from "../FireAnimation/FireAnimation";
 import styles from './Vehicle.module.scss';
 
-const Vehicle = ({data}) => {
+const Vehicle = ({ data, isActive, onSetActive }) => {
     const [target, setTarget] = useState(null);
 
     const handleClick = () => {
-        setTarget(data.id)
+        if (isActive) return;
+        setTarget(data.id);
+        onSetActive();
     }
 
     return (
@@ -15,7 +17,7 @@ const Vehicle = ({data}) => {
                 <FireAnimation />
             )}
             <img src={data.img} alt="vehicle" />
-            <div className={styles.VehicleTarget}  onClick={handleClick}></div>
+            <div className={styles.VehicleTarget} onClick={handleClick}></div>
         </li>
     );
 }

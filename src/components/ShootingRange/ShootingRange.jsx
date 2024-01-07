@@ -6,14 +6,19 @@ import styles from './ShootingRange.module.scss';
 import Container from '../Container/Container';
 import FireAnimation from './FireAnimation/FireAnimation';
 import Vehicle from './Vehicle/Vehicle';
+import Popup from '../Popup/Popup';
+import { useState } from 'react';
 
 const ShootingRange = () => {
+    const [isActive, setIsActive] = useState(false);
 
     const vehicles = [
         { id: 1, img: tank },
         { id: 2, img: airplane },
         { id: 3, img: ship }
     ];
+
+    const handleActive = () => setIsActive(ia => !ia);
 
     return (
         <div className={styles.ShootingRange}>
@@ -23,10 +28,11 @@ const ShootingRange = () => {
                     <ul className={styles.ShootingRangeVehicles}>
                         {
                             vehicles.map(vehicle => (
-                                <Vehicle key={vehicle.id} data={vehicle} />
+                                <Vehicle key={vehicle.id} data={vehicle} isActive={isActive} onSetActive={handleActive}/>
                             ))
                         }
                     </ul>
+                    <Popup isActive={isActive} onSetActive={handleActive}/>
                 </div>
             </Container>
         </div>
