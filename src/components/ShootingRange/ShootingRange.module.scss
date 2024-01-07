@@ -1,0 +1,24 @@
+@import "../../assets/style/variables";
+
+.ShootingRange {
+    background-color: #5c5353;
+    padding: 40px 0;
+}
+
+.ShootingRangeVehicles {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ShootingRangeTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 26px;
+    
+    @media screen and (min-width: $desktop) {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+}

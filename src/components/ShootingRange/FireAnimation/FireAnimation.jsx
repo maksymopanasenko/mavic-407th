@@ -2,7 +2,7 @@ import styles from './FireAnimation.module.scss';
 
 const FireAnimation = () => {
   return (
-    <div className={styles.Fire}>
+    <div className={styles.Fire} >
       {[...Array(50)].map((_, index) => {
         const animationDelay = `${Math.random() * 2}s`;
         const leftPosition = `calc((50% - 5px) * ${index / 50})`;
