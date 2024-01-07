@@ -24,9 +24,9 @@ const Header = () => {
                             <li className={styles.HeaderListItem}>
                                 <Link
                                     className={styles.HeaderLink}
-                                    to="#"
+                                    to="fundrising"
                                     duration={500}
-                                    aria-label="#"
+                                    aria-label="Move to section"
                                 >
                                     Text1
                                 </Link>

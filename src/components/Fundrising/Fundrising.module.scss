@@ -1,0 +1,62 @@
+@import "../../assets/style/variables";
+
+.Fundrising {
+    padding: 60px 0;
+}
+
+.FundrisingTitle {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 42px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 50px;
+        transform: translateY(7px);
+
+        @media screen and (min-width: $tablet) {
+            width: 70px;
+        }
+    }
+}
+
+.FundrisingInfo {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.FundrisingHolder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: $semibold;
+}
+
+.FundrisingBar {
+    border: 5px solid #253528;
+    background: #d5d5d5;
+    border-radius: 15px;
+}
+
+.FundrisingProgress {
+    padding: 30px 20px;
+    background: url('../../assets/images/pixel.jpg') center/cover no-repeat;
+    border-radius: 10px 0 0 10px;
+    width: 25%;
+}
+
+.FundrisingAmount {
+    font-weight: $bold;
+    font-size: 26px;
+}
