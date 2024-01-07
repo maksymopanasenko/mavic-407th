@@ -3,6 +3,7 @@ import Fundrising from './components/Fundrising/Fundrising';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Product from './components/Product/Product';
+import Sharing from './components/Sharing/Sharing';
 import ShootingRange from './components/ShootingRange/ShootingRange';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Product />
         <AboutBatalion />
         <ShootingRange />
+        <Sharing />
       </main>
     </>
   )
