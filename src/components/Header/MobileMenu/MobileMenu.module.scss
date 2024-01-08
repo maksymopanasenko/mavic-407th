@@ -77,7 +77,7 @@
 
   &:hover,
   &:focus {
-    color: $orange-color;
+    color: $secondary-bg-color;
   }
 
   @media screen and (min-width: $tablet) and (max-width: $desktop) {

@@ -1,5 +1,5 @@
 import styles from './Product.module.scss';
-import mavic from '../../assets/images/mavic.png';
+import mavic from '../../assets/images/mavic.webp';
 import Container from '../Container/Container';
 import Title from '../Title/Title';
 import { useEffect, useState } from 'react';

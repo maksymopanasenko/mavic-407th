@@ -1,5 +1,5 @@
 import styles from './Fundraising.module.scss';
-import map from '../../assets/images/map.png';
+import map from '../../assets/images/map.webp';
 import Container from '../Container/Container';
 import Title from '../Title/Title';
 import { ButtonLink } from '../Button/Button';

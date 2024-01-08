@@ -47,7 +47,7 @@
 
     &:hover,
     &:focus {
-        color: $orange-color;
+        color: $secondary-bg-color;
     }
 }
 
@@ -84,7 +84,7 @@
 
     &:hover,
     &:focus {
-        color: $orange-color;
+        color: $secondary-bg-color;
     }
 
     @media screen and (min-width: $desktop) {

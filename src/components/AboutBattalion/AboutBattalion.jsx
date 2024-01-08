@@ -1,6 +1,6 @@
 import styles from './AboutBattalion.module.scss';
 import soldier from '../../assets/images/soldier.webp';
-import camo from '../../assets/images/camo.jpg';
+import camo from '../../assets/images/camo.webp';
 import drone from '../../assets/images/drone.webp';
 import warriors from '../../assets/images/407rifle.webp';
 import TextSection from './TextSection/TextSection';

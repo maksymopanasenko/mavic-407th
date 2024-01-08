@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll';
 import styles from './Header.module.scss';
 import Container from '../Container/Container';
-import logo from './icons/sign.webp';
+import logo from '.././../assets/images/logo.webp';
 
 import { useTranslation } from 'react-i18next';
 import { FiMenu } from 'react-icons/fi';
@@ -79,7 +79,7 @@ const Header = () => {
                         <button
                             type="button"
                             className={styles.BurgerMenuOpen}
-                            onClick={() => onOpenMobileMenu()}
+                            onClick={onOpenMobileMenu}
                         >
                             <FiMenu />
                         </button>

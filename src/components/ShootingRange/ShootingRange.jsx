@@ -1,10 +1,9 @@
-import tank from '../../assets/images/tank.png';
-import airplane from '../../assets/images/airplane.png';
-import ship from '../../assets/images/ship.png';
+import tank from '../../assets/images/tank.webp';
+import airplane from '../../assets/images/airplane.webp';
+import ship from '../../assets/images/ship.webp';
 
 import styles from './ShootingRange.module.scss';
 import Container from '../Container/Container';
-import FireAnimation from './FireAnimation/FireAnimation';
 import Vehicle from './Vehicle/Vehicle';
 import Popup from '../Popup/Popup';
 import { useState } from 'react';

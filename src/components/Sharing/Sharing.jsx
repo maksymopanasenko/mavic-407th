@@ -1,5 +1,5 @@
 import styles from './Sharing.module.scss';
-import shevron from '../../assets/images/shevron.png';
+import shevron from '../../assets/images/shevron.webp';
 import Container from '../Container/Container';
 import { useState } from 'react';
 import { Button } from '../Button/Button';

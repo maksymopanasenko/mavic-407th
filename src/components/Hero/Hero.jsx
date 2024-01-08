@@ -1,6 +1,6 @@
 import { ButtonLink } from '../Button/Button';
 import Container from '../Container/Container';
-import heart from '../../assets/images/heart.png';
+import heart from '../../assets/images/heart.webp';
 import styles from './Hero.module.scss';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
