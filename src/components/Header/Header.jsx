@@ -3,12 +3,15 @@ import styles from './Header.module.scss';
 import Container from '../Container/Container';
 import logo from './icons/sign.webp';
 
+import { useTranslation } from 'react-i18next';
 import { FiMenu } from 'react-icons/fi';
 import { useState } from 'react';
 import MobileMenu from './MobileMenu/MobileMenu';
+import LangSwitcher from './LangSwitcher/LangSwitcher';
 
 const Header = () => {
     const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
+    const { t } = useTranslation();
 
     const onOpenMobileMenu = () => setIsOpenMobileMenu(!isOpenMobileMenu);
 
@@ -32,11 +35,11 @@ const Header = () => {
                             <li className={styles.HeaderListItem}>
                                 <Link
                                     className={styles.HeaderLink}
-                                    to="fundrising"
+                                    to="fundraising"
                                     duration={500}
                                     aria-label="Move to section"
                                 >
-                                    Fundrising
+                                    {t('header.fundraising')}
                                 </Link>
                             </li>
                             <li className={styles.HeaderListItem}>
@@ -56,7 +59,7 @@ const Header = () => {
                                     duration={500}
                                     aria-label="Move to section"
                                 >
-                                    About battalion
+                                    {t('header.about')}
                                 </Link>
                             </li>
                             <li className={styles.HeaderListItem}>
@@ -66,18 +69,21 @@ const Header = () => {
                                     duration={500}
                                     aria-label="Move to section"
                                 >
-                                    Shooting range
+                                    {t('header.shooting')}
                                 </Link>
                             </li>
                         </ul>
                     </nav>
-                    <button
-                        type="button"
-                        className={styles.BurgerMenuOpen}
-                        onClick={() => onOpenMobileMenu()}
-                    >
-                        <FiMenu />
-                    </button>
+                    <div className={styles.HeaderOptions}>
+                        <LangSwitcher />
+                        <button
+                            type="button"
+                            className={styles.BurgerMenuOpen}
+                            onClick={() => onOpenMobileMenu()}
+                        >
+                            <FiMenu />
+                        </button>
+                    </div>
                 </div>
                 <MobileMenu
                     setIsOpenMobileMenu={setIsOpenMobileMenu}

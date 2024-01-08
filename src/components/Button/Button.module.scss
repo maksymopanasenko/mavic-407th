@@ -28,7 +28,7 @@
     touch-action: manipulation;
     white-space: nowrap;
     will-change: box-shadow, transform;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: $bold;
 
     &:focus {
@@ -44,5 +44,9 @@
     &:active {
         box-shadow: #D6D6E7 0 3px 7px inset;
         transform: translateY(2px);
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 20px;
     }
 }

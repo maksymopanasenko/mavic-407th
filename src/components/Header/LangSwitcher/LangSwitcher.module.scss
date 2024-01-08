@@ -1,0 +1,107 @@
+@import "../../../assets/style/variables";
+
+.langWrapper {
+  position: relative;
+  font-family: $font-roboto;
+  font-weight: $bold;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  margin-left: 0;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 36px;
+  }
+}
+
+.selectedLanguage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+
+  color: #fff;
+
+  transition-property: color;
+  transition: color .3s;
+
+  &:hover,
+  &:focus {
+    color: $orange-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 10px;
+  }
+}
+
+.currentLang {
+  font-family: $font-roboto;
+  font-weight: $bold;
+  text-transform: uppercase;
+  margin-right: 12px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 26px;
+  }
+}
+
+.imgThumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  padding: 6px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 10px;
+    font-size: 28px;
+  }
+}
+
+.imgThumbRotate {
+  transform: rotate(180deg);
+}
+
+.changeLangWrapper {
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+}
+
+.changLang {
+  display: block;
+  color: #fff;
+  padding: 4px 12px;
+  transition-property: color;
+  transition: color .3s;
+
+  @media screen and (min-width: $desktop) {
+    padding: 10px;
+  }
+}
+
+.changLang:hover,
+.changLang:focus {
+  color: $orange-color;
+}
+
+.currentLang,
+.changLang {
+  font-size: 16px;
+  line-height: 1.5;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+  }
+}
+
+.Language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 12px;
+  color: #fff;
+  font-weight: $semibold;
+}

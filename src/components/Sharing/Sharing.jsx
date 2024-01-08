@@ -6,9 +6,11 @@ import { Button } from '../Button/Button';
 
 import { FaCheck } from 'react-icons/fa6';
 import Title from '../Title/Title';
+import { useTranslation } from 'react-i18next';
 
 const Sharing = () => {
     const [isCopied, setIsCopied] = useState(false);
+    const { t } = useTranslation();
     const currentUrl = window.location.href;
 
     const copyToClipboard = () => {
@@ -28,16 +30,18 @@ const Sharing = () => {
             });
     };
 
-    const btnText = isCopied ? <span>Copied {<FaCheck />}</span> : "Copy the link";
+    const btnText = isCopied ? <span>{t('share.copied')} {<FaCheck />}</span> : `${t('share.link')}`;
     return (
         <section className={styles.Sharing}>
             <Container>
-                <Title text='Help others learn about our fundrising!' />
+                <Title text={t('share.title')} />
                 <div className={styles.SharingBody}>
                     <img src={shevron} alt="warriors" />
                     <div className={styles.SharingInfo}>
                         <p className={styles.SharingText}>
-                            Please share the link to our charity fundrising on social media.<br /> Your help can bring the end of the war closer or save the lives of our heroes!
+                            {t('share.text-1')}
+                            <br />
+                            {t('share.text-2')}
                         </p>
                         <Button text={btnText} onClick={copyToClipboard} />
                     </div>

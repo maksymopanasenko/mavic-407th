@@ -1,10 +1,10 @@
 @import "../../assets/style/variables";
 
-.Fundrising {
+.Fundraising {
     padding: 60px 0;
 }
 
-.FundrisingTitle {
+.FundraisingTitle {
     font-size: 32px;
     text-align: center;
     margin-bottom: 50px;
@@ -20,7 +20,7 @@
     }
 }
 
-.FundrisingImg {
+.FundraisingImg {
     width: 50px;
     transform: translateY(7px);
 
@@ -29,7 +29,7 @@
     }
 }
 
-.FundrisingInfo {
+.FundraisingInfo {
     width: 100%;
     margin-top: 100px;
 
@@ -39,14 +39,14 @@
     }
 }
 
-.FundrisingHolder {
+.FundraisingHolder {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
 }
 
-.FundrisingLabel {
+.FundraisingLabel {
     display: flex;
     flex-direction: column;
     font-size: 16px;
@@ -67,25 +67,25 @@
     }
 }
 
-.FundrisingBar {
+.FundraisingBar {
     border: 4px solid #253528;
     background: #d5d5d5;
     border-radius: 15px;
     overflow: hidden;
 }
 
-.FundrisingProgress {
+.FundraisingProgress {
     padding: 30px 0;
     background: url('../../assets/images/pixel.jpg') center/cover no-repeat;
     border-radius: 10px 0 0 10px;
 }
 
-.FundrisingAmount {
+.FundraisingAmount {
     font-weight: $bold;
     font-size: 24px;
 }
 
-.FundrisingPercent {
+.FundraisingPercent {
     font-weight: $bold;
     font-size: 18px;
 
@@ -94,7 +94,7 @@
     }
 }
 
-.FundrisingSupport {
+.FundraisingSupport {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,14 +115,20 @@
 }
 
 
-.FundrisingCurrency {
+.FundraisingCurrency {
     display: flex;
     flex-direction: column;
     color: #0057B8;
 }
 
-.FundrisingEuro {
+.FundraisingEuro {
     font-size: 14px;
     font-weight: $bold;
     color: #FFD700;
+}
+
+.FundraisingSupportText {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #fff;
 }

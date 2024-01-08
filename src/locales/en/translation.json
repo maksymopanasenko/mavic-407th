@@ -1,0 +1,66 @@
+{
+  "header": {
+    "fundraising": "Fundraising",
+    "about": "About battalion",
+    "shooting": "Shooting Range"
+  },
+  "hero": {
+    "title-1": "Eyes in the Sky",
+    "title-2": "Power in the Fight",
+    "subtitle-1": "Military fundraising for the",
+    "subtitle-2": "drone",
+    "btn": "Donate"
+  },
+  "about": {
+    "title": "About heroes from 407th",
+    "label": "407th Separate Rifle Battalion",
+    "text-1": "The 407th Separate Rifle Battalion, 3rd Company of the Armed Forces of Ukraine stands as a symbol of unwavering bravery and dedication in the face of adversity. In the ongoing conflict, this valiant unit has emerged as a formidable force, playing a pivotal role in the defense of the city of ",
+    "text-2": " against Russian invaders. Comprising a group of highly trained and committed individuals, the 407th Battalion exemplifies the spirit of sacrifice and duty to protect the sovereignty of Ukraine. The soldiers of this battalion display exceptional courage as they confront the challenges of war, standing tall to safeguard the territorial integrity of their nation.",
+    "text-3": "In the epicenter of conflict, these brave men and women put their lives on the line every day, facing the harsh realities of war with resilience and determination. Their steadfast commitment to the defense of ",
+    "text-4": " reflects the deep-rooted sense of patriotism that drives them to protect their homeland from external threats. The 407th Battalion unwavering resolve to defend ",
+    "text-5": " serves as an inspiration to the entire nation. Their sacrifices echo through the annals of Ukrainian history, reminding us all of the indomitable spirit that fuels the armed forces in their quest to secure a peaceful and prosperous future for Ukraine.",
+    "text-6": "As they stand guard against the Russian invaders, the members of the 407th Battalion are not just soldiers; they are the guardians of freedom, the shield that protects the innocent, and the embodiment of Ukraine's determination to resist aggression. Their dedication is a testament to the resilience and strength of the Ukrainian people, who stand united in the face of external threats.",
+    "city-1": "Avdiivka",
+    "city-2": "Avdiivka",
+    "city-3": "Avdiivka"
+  },
+
+  "fundraising": {
+    "title-1": "Your contribution to the ",
+    "title-2": " victory",
+    "collected": "Already collected",
+    "target": "Target amount",
+    "support": "Support the 407th battalion, help Ukraine defend itself",
+    "text": "Transfer at least 1 EUR for a ''bird'' for the soldiers",
+    "btn": "Support"
+  },
+
+  "mavic": {
+    "title": "Mavic 3T advantages on the battlefield",
+    "advantage-1": "Reconnaissance and surveillance",
+    "advantage-2": "Targeting and bombing",
+    "advantage-3": "Search and rescue",
+    "advantage-4": "Control of the front line"
+  },
+
+  "game": {
+    "title": "Send them all to hell!",
+    "text": "Take the first shot!",
+    "heading": "Good job!",
+    "btn-1": "Donate now!",
+    "btn-2": "Destroy more!"
+  },
+
+  "share": {
+    "title": "Help others learn about our fundraising!",
+    "text-1": "Please share the link to our charity fundraising on social media.",
+    "text-2": " Your help can bring the end of the war closer or save the lives of our heroes!",
+    "link": "Copy the link",
+    "copied": "Copied"
+  },
+
+  "footer": {
+    "text-1": "Developed by ",
+    "text-2": "All rights reserved"
+  }
+}

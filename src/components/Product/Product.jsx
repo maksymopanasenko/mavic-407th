@@ -4,9 +4,11 @@ import Container from '../Container/Container';
 import Title from '../Title/Title';
 import { useEffect, useState } from 'react';
 import cn from 'classnames';
+import { useTranslation } from 'react-i18next';
 
 const Product = () => {
     const [visible, setVisible] = useState(false);
+    const { t } = useTranslation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,10 +32,10 @@ const Product = () => {
         <section id='product' className={styles.Product}>
             <Container>
                 <div className={styles.ProductBody}>
-                    <Title text='Mavic 3T advantages on the battlefield' light />
+                    <Title text={t('mavic.title')} light />
                     <div className={styles.ProductAdvantages}>
-                        <p className={styles.ProductAdvantage}>Reconnaissance and surveillance</p>
-                        <p className={styles.ProductAdvantage}>Targeting and bombing</p>
+                        <p className={styles.ProductAdvantage}>{t('mavic.advantage-1')}</p>
+                        <p className={styles.ProductAdvantage}>{t('mavic.advantage-2')}</p>
                     </div>
                     <div className={styles.ProductArch}>
                         <div className={styles.ProductItem}>
@@ -42,8 +44,8 @@ const Product = () => {
                         </div>
                     </div>
                     <div className={styles.ProductAdvantages}>
-                        <p className={styles.ProductAdvantage}>Search and rescue</p>
-                        <p className={styles.ProductAdvantage}>Control of the front line</p>
+                        <p className={styles.ProductAdvantage}>{t('mavic.advantage-3')}</p>
+                        <p className={styles.ProductAdvantage}>{t('mavic.advantage-4')}</p>
                     </div>
                 </div>
             </Container>

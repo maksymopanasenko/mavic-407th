@@ -9,11 +9,13 @@ import Vehicle from './Vehicle/Vehicle';
 import Popup from '../Popup/Popup';
 import { useState } from 'react';
 import Title from '../Title/Title';
+import { useTranslation } from 'react-i18next';
 
 const ShootingRange = () => {
     const [isActive, setIsActive] = useState(false);
     const [isFirstShot, setIsFirstShot] = useState(true);
     const [destroyed, setDestroyed] = useState([]);
+    const { t } = useTranslation();
 
     const vehicles = [
         { id: 1, img: tank },
@@ -32,7 +34,7 @@ const ShootingRange = () => {
         <section id='shooting-range' className={styles.ShootingRange}>
             <Container>
                 <div className={styles.ShootingRangeBody}>
-                    <Title text='Send them all to hell!' light />
+                    <Title text={t('game.title')} light />
                     <ul className={styles.ShootingRangeVehicles}>
                         {
                             vehicles.map(vehicle => (
@@ -41,7 +43,7 @@ const ShootingRange = () => {
                         }
                     </ul>
                     {isFirstShot && (
-                        <p className={styles.ShootingRangeText}>Take the first shot!</p>
+                        <p className={styles.ShootingRangeText}>{t('game.text')}</p>
                     )}
                     <Popup isActive={isActive} onSetActive={handleActive} />
                 </div>

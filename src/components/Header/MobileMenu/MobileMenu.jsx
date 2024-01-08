@@ -2,8 +2,10 @@ import { Link } from 'react-scroll';
 import { AiOutlineClose } from 'react-icons/ai';
 import styles from './MobileMenu.module.scss';
 import cn from 'classnames';
+import { useTranslation } from 'react-i18next';
 
 const MobileMenu = ({ setIsOpenMobileMenu, isOpenMobileMenu }) => {
+  const { t } = useTranslation();
 
   return (
     <div
@@ -23,12 +25,12 @@ const MobileMenu = ({ setIsOpenMobileMenu, isOpenMobileMenu }) => {
             <li className={styles.MobileMenuListItem}>
               <Link
                 className={styles.MobileMenuLink}
-                to="fundrising"
+                to="fundraising"
                 duration={500}
-                aria-label="Move to Fundrising section"
+                aria-label="Move to Fundraising section"
                 onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
               >
-                Fundrising
+                {t('header.fundraising')}
               </Link>
             </li>
             <li className={styles.MobileMenuListItem}>
@@ -50,7 +52,7 @@ const MobileMenu = ({ setIsOpenMobileMenu, isOpenMobileMenu }) => {
                 aria-label="Move to About battalion section"
                 onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
               >
-                About battalion
+                {t('header.about')}
               </Link>
             </li>
             <li className={styles.MobileMenuListItem}>
@@ -61,7 +63,7 @@ const MobileMenu = ({ setIsOpenMobileMenu, isOpenMobileMenu }) => {
                 aria-label="Move to Shooting range section"
                 onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
               >
-                Shooting range
+                {t('header.shooting')}
               </Link>
             </li>
           </ul>
