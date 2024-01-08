@@ -1,0 +1,26 @@
+@import "../../assets/style/variables";
+
+.Footer {
+    padding: 40px 0;
+    background: #053509;
+    color: #fff;
+    text-align: center;
+}
+
+.FooterText {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    line-height: 1.5;
+}
+
+.FooterLink {
+    color: rgb(209, 255, 2);
+    font-weight: $bold;
+    transition: .3s;
+
+    &:hover {
+        color: rgb(255, 251, 1);
+    }
+}

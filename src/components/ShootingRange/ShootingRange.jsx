@@ -11,6 +11,7 @@ import { useState } from 'react';
 
 const ShootingRange = () => {
     const [isActive, setIsActive] = useState(false);
+    const [isFirstShot, setIsFirstShot] = useState(true);
 
     const vehicles = [
         { id: 1, img: tank },
@@ -18,7 +19,10 @@ const ShootingRange = () => {
         { id: 3, img: ship }
     ];
 
-    const handleActive = () => setIsActive(ia => !ia);
+    const handleActive = () => {
+        setIsActive(ia => !ia);
+        setIsFirstShot(false);
+    }
 
     return (
         <section id='shooting-range' className={styles.ShootingRange}>
@@ -28,11 +32,14 @@ const ShootingRange = () => {
                     <ul className={styles.ShootingRangeVehicles}>
                         {
                             vehicles.map(vehicle => (
-                                <Vehicle key={vehicle.id} data={vehicle} isActive={isActive} onSetActive={handleActive}/>
+                                <Vehicle key={vehicle.id} data={vehicle} isActive={isActive} onSetActive={handleActive} />
                             ))
                         }
                     </ul>
-                    <Popup isActive={isActive} onSetActive={handleActive}/>
+                    {isFirstShot && (
+                        <p className={styles.ShootingRangeText}>Take the first shot</p>
+                    )}
+                    <Popup isActive={isActive} onSetActive={handleActive} />
                 </div>
             </Container>
         </section>

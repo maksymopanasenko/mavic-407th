@@ -1,4 +1,5 @@
 import AboutBatalion from './components/AboutBatalion/AboutBatalion';
+import Footer from './components/Footer/Footer';
 import Fundrising from './components/Fundrising/Fundrising';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
@@ -19,6 +20,7 @@ function App() {
         <ShootingRange />
         <Sharing />
       </main>
+      <Footer />
     </>
   )
 }
