@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Button from '../Button/Button';
 
 import { FaCheck } from 'react-icons/fa6';
+import Title from '../Title/Title';
 
 const Sharing = () => {
     const [isCopied, setIsCopied] = useState(false);
@@ -31,7 +32,7 @@ const Sharing = () => {
     return (
         <section className={styles.Sharing}>
             <Container>
-                <h2 className={styles.SharingTitle}>Help others learn about our fundrising!</h2>
+                <Title text='Help others learn about our fundrising!' />
                 <div className={styles.SharingBody}>
                     <img src={shevron} alt="warriors" /> 
                     <div className={styles.SharingInfo}>

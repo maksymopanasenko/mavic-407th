@@ -15,7 +15,7 @@ const Header = () => {
                     >
                         <span className={styles.HeaderLogo}>
                             4
-                            <img src={logo} alt='logo' width={55} />
+                            <img src={logo} alt='logo' />
                             7
                         </span>
                     </Link>

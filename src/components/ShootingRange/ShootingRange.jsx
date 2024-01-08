@@ -8,10 +8,12 @@ import FireAnimation from './FireAnimation/FireAnimation';
 import Vehicle from './Vehicle/Vehicle';
 import Popup from '../Popup/Popup';
 import { useState } from 'react';
+import Title from '../Title/Title';
 
 const ShootingRange = () => {
     const [isActive, setIsActive] = useState(false);
     const [isFirstShot, setIsFirstShot] = useState(true);
+    const [destroyed, setDestroyed] = useState([]);
 
     const vehicles = [
         { id: 1, img: tank },
@@ -19,7 +21,9 @@ const ShootingRange = () => {
         { id: 3, img: ship }
     ];
 
-    const handleActive = () => {
+    const handleActive = (id) => {
+        if (destroyed.find(item => id === item)) return;
+        setDestroyed(d => [...d, id]);
         setIsActive(ia => !ia);
         setIsFirstShot(false);
     }
@@ -28,7 +32,7 @@ const ShootingRange = () => {
         <section id='shooting-range' className={styles.ShootingRange}>
             <Container>
                 <div className={styles.ShootingRangeBody}>
-                    <h2 className={styles.ShootingRangeTitle}>Send them all to hell!</h2>
+                    <Title text='Send them all to hell!' light />
                     <ul className={styles.ShootingRangeVehicles}>
                         {
                             vehicles.map(vehicle => (
@@ -37,7 +41,7 @@ const ShootingRange = () => {
                         }
                     </ul>
                     {isFirstShot && (
-                        <p className={styles.ShootingRangeText}>Take the first shot</p>
+                        <p className={styles.ShootingRangeText}>Take the first shot!</p>
                     )}
                     <Popup isActive={isActive} onSetActive={handleActive} />
                 </div>

@@ -1,0 +1,53 @@
+@import "../../assets/style/variables";
+
+
+.Title {
+    text-align: center;
+    color: #000;
+    font-size: 26px;
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto 40px;
+    padding: 10px 20px;
+    
+    @media screen and (min-width: $desktop) {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 40px;
+        height: 20px;
+        border-bottom: 3px solid #000;
+        border-left: 3px solid #000;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 20px;
+        border-top: 3px solid #000;
+        border-right: 3px solid #000;
+    }
+}
+
+.TitleLight {
+    color: #fff;
+
+    &:before {
+        border-bottom: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+
+    &::after {
+        border-top: 3px solid #fff;
+        border-right: 3px solid #fff;
+    }
+}

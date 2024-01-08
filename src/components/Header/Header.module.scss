@@ -1,7 +1,7 @@
 @import "../../assets/style/variables";
 
 .Header {
-    background: linear-gradient(202deg, rgba(4, 36, 11, 1) 0%, rgba(22, 61, 31, 1) 60%, rgba(47, 75, 54, 1) 100%);
+    background: linear-gradient(202deg, #04240b 0%, rgba(22, 61, 31, 1) 60%, rgba(47, 75, 54, 1) 100%);
     box-shadow: 0 1px 20px #000000;
     position: relative;
     z-index: 20;
@@ -48,15 +48,26 @@
     &:hover,
     &:focus {
         color: $orange-color;
-        text-shadow: 0 0 5px #ffffff;
     }
 }
 
 .HeaderLogo {
     display: flex;
     align-items: center;
-    font-size: 72px;
+    font-size: 42px;
     font-family: $font-roboto;
-    color: #273529;
-    text-shadow: 0 0 8px #ffffff;
+    color: #04240b;
+    text-shadow: 0 0 1px #a3a3a3;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 72px;
+    }
+
+    img {
+        width: 40px;
+
+        @media screen and (min-width: $desktop) {
+            width: 55px;
+        }
+    }
 }

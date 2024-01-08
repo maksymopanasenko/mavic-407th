@@ -8,7 +8,7 @@ const Vehicle = ({ data, isActive, onSetActive }) => {
     const handleClick = () => {
         if (isActive) return;
         setTarget(data.id);
-        onSetActive();
+        onSetActive(data.id);
     }
 
     return (

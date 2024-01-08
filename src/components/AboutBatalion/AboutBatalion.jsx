@@ -5,12 +5,13 @@ import drone from '../../assets/images/drone.webp';
 import warriors from '../../assets/images/407rifle.webp';
 import TextSection from './TextSection/TextSection';
 import Container from '../Container/Container';
+import Title from '../Title/Title';
 
 const AboutBatalion = () => {
     return (
         <section id='about' className={styles.AboutBatalion}>
             <Container>
-                <h2 className={styles.AboutBatalionTitle}>About heroes from 407th</h2>
+                <Title text='About heroes from 407th' />
                 <div className={styles.AboutBatalionIntro}>
                     <img src={warriors} alt="warriors" />
                     <span>407th Separate Rifle Battalion</span>
