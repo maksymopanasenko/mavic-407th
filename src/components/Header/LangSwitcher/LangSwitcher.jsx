@@ -13,15 +13,22 @@ const LangSwitcher = () => {
 
   useEffect(() => {
     if (lang) {
-      i18n.changeLanguage('en');
-    } else {
       i18n.changeLanguage('ua');
+    } else {
+      i18n.changeLanguage('en');
     }
   }, [lang])
 
   return (
     <div>
-      <Switch onChange={handleChange} checked={lang} onColor='#0057B8' offColor='#FFD700' uncheckedIcon={<span className={styles.Language}>UA</span>} checkedIcon={<span className={styles.Language}>EN</span>}/>
+      <Switch
+        onChange={handleChange}
+        checked={lang}
+        onColor='#0057B8'
+        offColor='#FFD700'
+        uncheckedIcon={<span className={styles.Language}>EN</span>}
+        checkedIcon={<span className={styles.Language}>UA</span>}
+      />
     </div>
   );
 };
