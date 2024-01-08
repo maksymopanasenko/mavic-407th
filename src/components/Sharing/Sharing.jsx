@@ -2,7 +2,7 @@ import styles from './Sharing.module.scss';
 import shevron from '../../assets/images/shevron.png';
 import Container from '../Container/Container';
 import { useState } from 'react';
-import Button from '../Button/Button';
+import { Button } from '../Button/Button';
 
 import { FaCheck } from 'react-icons/fa6';
 import Title from '../Title/Title';
@@ -34,12 +34,12 @@ const Sharing = () => {
             <Container>
                 <Title text='Help others learn about our fundrising!' />
                 <div className={styles.SharingBody}>
-                    <img src={shevron} alt="warriors" /> 
+                    <img src={shevron} alt="warriors" />
                     <div className={styles.SharingInfo}>
                         <p className={styles.SharingText}>
-                            Please share the link to our charity fundrising on social media.<br/> Your help can bring the end of the war closer or save the lives of our heroes!
+                            Please share the link to our charity fundrising on social media.<br /> Your help can bring the end of the war closer or save the lives of our heroes!
                         </p>
-                        <Button text={btnText} onClick={copyToClipboard}/>
+                        <Button text={btnText} onClick={copyToClipboard} />
                     </div>
                 </div>
             </Container>

@@ -48,7 +48,7 @@ const Header = () => {
                                     duration={500}
                                     aria-label="Move to section"
                                 >
-                                    About batalion
+                                    About battalion
                                 </Link>
                             </li>
                             <li className={styles.HeaderListItem}>

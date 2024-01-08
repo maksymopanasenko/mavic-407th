@@ -1,4 +1,4 @@
-import Button from '../Button/Button';
+import { ButtonLink } from '../Button/Button';
 import Container from '../Container/Container';
 import heart from '../../assets/images/heart.png';
 import styles from './Hero.module.scss';
@@ -24,7 +24,7 @@ const Hero = () => {
                             drone</h3>
                         <img src={heart} alt="heart" width={50} />
                     </div>
-                    <Button text='Donate' />
+                    <ButtonLink text='Donate' />
                 </div>
             </Container>
         </section>

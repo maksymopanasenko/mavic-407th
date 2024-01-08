@@ -1,10 +1,10 @@
 @import "../../assets/style/variables";
 
-.AboutBatalion {
+.AboutBattalion {
     padding: 50px 0;
 }
 
-.AboutBatalionTitle {
+.AboutBattalionTitle {
     text-align: center;
     font-size: 32px;
     margin-bottom: 50px;
@@ -14,7 +14,7 @@
     }
 }
 
-.AboutBatalionIntro {
+.AboutBattalionIntro {
     text-align: center;
     margin-bottom: 60px;
 
@@ -22,4 +22,9 @@
         display: inline-block;
         margin-top: 10px;
     }
+}
+
+.AboutBattalionlink {
+    color: #0057B8;
+    font-weight: $semibold;
 }

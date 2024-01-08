@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "../Button/Button";
+import { Button, ButtonLink } from "../Button/Button";
 import styles from './Popup.module.scss';
 import cn from 'classnames';
 
@@ -17,7 +17,7 @@ const Popup = ({ isActive, onSetActive }) => {
         <div className={cn(styles.Popup, { [styles.PopupActive]: isActive })}>
             <h5 className={styles.PopupHeading}>Good job!</h5>
             <div className={styles.PopupControls}>
-                <Button text="Donate now" />
+                <ButtonLink text="Donate now" />
                 {count < 2 && (
                     <Button text="Destroy more" onClick={handleClick} />
                 )}

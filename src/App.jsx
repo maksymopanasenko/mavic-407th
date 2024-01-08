@@ -1,4 +1,4 @@
-import AboutBatalion from './components/AboutBatalion/AboutBatalion';
+import AboutBattalion from './components/AboutBattalion/AboutBattalion';
 import Footer from './components/Footer/Footer';
 import Fundrising from './components/Fundrising/Fundrising';
 import Header from './components/Header/Header';
@@ -16,7 +16,7 @@ function App() {
         <Hero />
         <Fundrising />
         <Product />
-        <AboutBatalion />
+        <AboutBattalion />
         <ShootingRange />
         <Sharing />
       </main>
