@@ -1,15 +1,11 @@
 @import "../../assets/style/variables";
 
 .Hero {
-    height: 60vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: url('../../assets/images/hero.jpg') center/cover no-repeat;
-
-    @media screen and (min-width: $tablet) {
-        height: 80vh;
-    }
 }
 
 .HeroTitle {

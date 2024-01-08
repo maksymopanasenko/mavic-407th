@@ -4,10 +4,10 @@ import Container from '../Container/Container';
 import Title from '../Title/Title';
 import { ButtonLink } from '../Button/Button';
 import { useEffect, useState } from 'react';
-import fetchAccountBalance from '../helpers/fetchData';
 import { useQuery } from '@tanstack/react-query';
-import fetchCurrency from '../helpers/fetchNBU';
 import Loader from './Loader/Loader';
+import fetchAccountBalance from '../../helpers/fetchData';
+import fetchCurrency from '../../helpers/fetchNBU';
 
 const Fundrising = () => {
     const [amount, setAmount] = useState(0);

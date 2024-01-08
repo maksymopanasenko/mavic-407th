@@ -3,7 +3,15 @@ import styles from './Header.module.scss';
 import Container from '../Container/Container';
 import logo from './icons/sign.webp';
 
+import { FiMenu } from 'react-icons/fi';
+import { useState } from 'react';
+import MobileMenu from './MobileMenu/MobileMenu';
+
 const Header = () => {
+    const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
+
+    const onOpenMobileMenu = () => setIsOpenMobileMenu(!isOpenMobileMenu);
+
     return (
         <header className={styles.Header}>
             <Container>
@@ -63,7 +71,18 @@ const Header = () => {
                             </li>
                         </ul>
                     </nav>
+                    <button
+                        type="button"
+                        className={styles.BurgerMenuOpen}
+                        onClick={() => onOpenMobileMenu()}
+                    >
+                        <FiMenu />
+                    </button>
                 </div>
+                <MobileMenu
+                    setIsOpenMobileMenu={setIsOpenMobileMenu}
+                    isOpenMobileMenu={isOpenMobileMenu}
+                />
             </Container>
         </header>
     );
