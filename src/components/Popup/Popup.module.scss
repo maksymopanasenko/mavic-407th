@@ -1,7 +1,6 @@
 @import "../../assets/style/variables";
 
 .Popup {
-    width: 95%;
     margin: 30px auto 0;
     padding: 10px 10px 30px;
     background: rgb(116, 137, 117);
@@ -13,7 +12,6 @@
     transition: 1s ease;
 
     @media screen and (min-width: $tablet) {
-        width: 340px;
         padding: 10px 20px 30px;
     }
 }

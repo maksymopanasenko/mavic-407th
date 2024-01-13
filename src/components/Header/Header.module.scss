@@ -82,11 +82,6 @@
     transition-property: color;
     transition: color .3s;
 
-    &:hover,
-    &:focus {
-        color: $secondary-bg-color;
-    }
-
     @media screen and (min-width: $desktop) {
         display: none;
     }

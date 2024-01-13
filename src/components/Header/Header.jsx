@@ -13,7 +13,10 @@ const Header = () => {
     const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
     const { t } = useTranslation();
 
-    const onOpenMobileMenu = () => setIsOpenMobileMenu(!isOpenMobileMenu);
+    const onOpenMobileMenu = (e) => {
+        console.log(e.target);
+        setIsOpenMobileMenu(!isOpenMobileMenu);
+    }
 
     return (
         <header className={styles.Header}>
